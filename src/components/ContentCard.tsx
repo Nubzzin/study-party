@@ -1,17 +1,11 @@
-export interface Content {
-    id: number;
-    title: string;
-    text: string;
-    image?: string;
-    readonly date: string;
-}
+import { Content } from "../services/api";
 
 function ContentCard({ content }: { content: Content }) {
     return (
-        <div>
+        <div className="content-card">
             <h2>{content.title}</h2>
             <p>{content.text}</p>
-            {content.image && <img src={content.image}></img>}
+            {content.image && <img src={content.image} alt={content.title} />}
             <p>{content.date}</p>
         </div>
     );

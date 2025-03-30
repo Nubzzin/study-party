@@ -3,7 +3,7 @@ import "./css/App.css";
 
 // Pages
 import Home from "./pages/Home";
-import Contents from "./pages/Contents";
+import ContentsPanel from "./pages/ContentsPanel";
 import QA from "./pages/QA";
 
 // Components
@@ -15,7 +15,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />}></Route>
-                <Route path="/contents" element={<Contents />}></Route>
+                <Route path="/contents" element={<ContentsPanel />}></Route>
                 <Route path="/qa" element={<QA />}></Route>
             </Routes>
         </main>
